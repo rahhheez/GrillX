@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrillX Menu</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Main CSS -->
+<link rel="stylesheet" href="./style.css">
+
+<body class="body16">
+
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg grillx-navbar">
+  <div class="container">
+    <a class="navbar-brand grillx-brand" href="./home.html">GrillX</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./cart.html">My Cart</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- HEADER -->
+  <div class="gx-menu-header">
+    <h1>Our Menu</h1>
+    <p>Choose your favourite meal and enjoy the GrillX flavour!</p>
+  </div>
+
+  <!-- MENU ITEMS -->
+  <div class="gx-menu-wrapper">
+    <div class="gx-menu-grid">
+
+      <!-- ITEM 1 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7865 (1).JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">GrillX Special Burger</h4>
+        <p class="gx-menu-desc">Double patty, cheese, smokey sauce & premium taste.</p>
+        <p class="gx-menu-price">₹208</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('GrillX Special Burger', 208, './img/IMG_7865 (1).JPG')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7864.JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">Cheesy Loaded Fries</h4>
+        <p class="gx-menu-desc">Golden fries with cheese, jalapenos & GrillX sauce.</p>
+        <p class="gx-menu-price">₹180</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Cheesy Loaded Fries', 180, './img/IMG_7864.JPG')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7867.JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">BBQ Ribs</h4>
+        <p class="gx-menu-desc">Slow-cooked ribs with signature BBQ glaze.</p>
+        <p class="gx-menu-price">₹245</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('BBQ Ribs', 245, './img/IMG_7867.JPG')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 4 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7874.JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">Shawarma</h4>
+        <p class="gx-menu-desc">Soft wrap with spiced chicken & creamy sauce.</p>
+        <p class="gx-menu-price">₹110</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Shawarma', 110, './img/IMG_7874.JPG')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 5 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7872.WEBP" class="gx-menu-img">
+        <h4 class="gx-menu-title">Al-Faham Mandhi</h4>
+        <p class="gx-menu-desc">Grilled chicken over aromatic rice.</p>
+        <p class="gx-menu-price">₹230</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Al-Faham Mandhi', 230, './img/IMG_7872.WEBP')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 6 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7876.WEBP" class="gx-menu-img">
+        <h4 class="gx-menu-title">Smoky Paneer Steak</h4>
+        <p class="gx-menu-desc">Herb-marinated paneer with veggies.</p>
+        <p class="gx-menu-price">₹255</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Smoky Paneer Steak (veg)', 255, './img/IMG_7876.WEBP')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 7 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7879.JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">Chicken Alfredo Pasta</h4>
+        <p class="gx-menu-desc">Creamy pasta with grilled chicken.</p>
+        <p class="gx-menu-price">₹260</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Chicken Alfredo Pasta', 260, './img/IMG_7879.JPG')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 8 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7871.JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">Chicken Biryani</h4>
+        <p class="gx-menu-desc">Fragrant rice layered with tender chicken.</p>
+        <p class="gx-menu-price">₹150</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Chicken Biryani', 150, './img/IMG_7871.JPG')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 9 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7877.WEBP" class="gx-menu-img">
+        <h4 class="gx-menu-title">Grilled Fish</h4>
+        <p class="gx-menu-desc">Fish grilled in lemon butter.</p>
+        <p class="gx-menu-price">₹430</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Grilled Fish Lemon Butter', 430, './img/IMG_7877.WEBP')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 10 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7873.JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">Al-Faham</h4>
+        <p class="gx-menu-desc">Charcoal-grilled chicken Arabic style.</p>
+        <p class="gx-menu-price">₹130</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Al-Faham', 130, './img/IMG_7873.JPG')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 11 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7878.JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">Veg Sizzler Plate</h4>
+        <p class="gx-menu-desc">Paneer, veggies & rice with tangy sauce.</p>
+        <p class="gx-menu-price">₹250</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Veg Sizzler Plate', 250, './img/IMG_7878.JPG')">Add to Cart</button>
+      </div>
+
+      <!-- ITEM 12 -->
+      <div class="gx-menu-card">
+        <img src="./img/IMG_7875.JPG" class="gx-menu-img">
+        <h4 class="gx-menu-title">Shawaya</h4>
+        <p class="gx-menu-desc">Classic Arabic grilled chicken.</p>
+        <p class="gx-menu-price">₹199</p>
+        <button class="gx-menu-btn"
+          onclick="addToCart('Shawaya', 199, './img/IMG_7875.JPG')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="f1 bg-dark text-center text-white py-3">
+    <div class="d2">
+      <a href="https://www.instagram.com/griilllx?igsh=aDBua3V5dHNpYzhs&utm_source=qr" class="text-white">
+        <i class="fa-brands fa-instagram"></i> GrillX
+      </a>  
+
+
+    </div>
+        © 2025 GrillX — All Rights Reserved
+
+  </footer>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

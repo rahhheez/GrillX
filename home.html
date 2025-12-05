@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrillX Restaurant</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<link rel="stylesheet" href="./style.css">
+<body class="gx-home-body">
+
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg grillx-navbar">
+  <div class="container">
+    <a class="navbar-brand grillx-brand" href="./home.html">GrillX</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./cart.html">My Cart</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- HERO SECTION -->
+<header class="gx-hero-box">
+    <h1 class="gx-hero-title">Welcome to GrillX</h1>
+    <p class="gx-hero-sub">
+      Where every meal becomes a memory, and every guest becomes a friend.
+    </p>
+    <a href="./menu.html">
+      <button class="gx-primary-btn">See Menu</button>
+    </a>
+  </header>
+  <!-- ABOUT SECTION -->
+  <section class="gx-section-bg">
+    <div class="gx-about-container">
+      <div>
+        <img src="./img/IMG_7773.PNG" class="gx-about-img" alt="about">
+      </div>
+
+      <div class="gx-about-textbox">
+        <h2 class="gx-about-heading">About GrillX</h2>
+        <p class="gx-about-text">
+          Welcome to GrillX, where flavor meets fire and every dish is crafted
+          with passion. From smoky grills to sizzling platters, we serve food
+          that brings people together — fresh, flavorful, and unforgettable.
+          Whether you visit us under the bright sun or city lights, you'll
+          always find good vibes, warm hospitality, and a taste that lingers long
+          after the meal is over.
+        </p>
+
+        <a href="./contact.html">
+          <button class="gx-secondary-btn">Contact Us</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR DISHES -->
+  <section class="gx-popular-section">
+    <h2 class="gx-popular-title">Popular Dishes</h2>
+
+    <div class="gx-popular-grid">
+
+      <!-- Dish 1 -->
+      <div class="gx-food-card">
+        <img src="./img/IMG_7865 (1).JPG" class="gx-food-img" alt="">
+        <h4 class="gx-food-name">GrillX Special Burger</h4>
+        <p class="gx-food-des">Double patty layered with cheese and smokey sauce.</p>
+        <p class="gx-food-price">₹208</p>
+        <button class="gx-add-btn" onclick="addToCart('GrillX Special Burger', 208, './img/IMG_7865 (1).JPG')">Add to Cart</button>
+      </div>
+
+      <!-- Dish 2 -->
+      <div class="gx-food-card">
+        <img src="./img/IMG_7864.JPG" class="gx-food-img" alt="">
+        <h4 class="gx-food-name">Cheesy Loaded Fries</h4>
+        <p class="gx-food-des">Crispy fries loaded with cheese & GrillX sauce.</p>
+        <p class="gx-food-price">₹180</p>
+        <button class="gx-add-btn" onclick="addToCart('Cheesy Loaded Fries', 180, './img/IMG_7864.JPG')">Add to Cart</button>
+      </div>
+
+      <!-- Dish 3 -->
+      <div class="gx-food-card">
+        <img src="./img/IMG_7867.JPG" class="gx-food-img" alt="">
+        <h4 class="gx-food-name">BBQ Ribs</h4>
+        <p class="gx-food-des">Soft, smoky and sweet slow-cooked BBQ ribs.</p>
+        <p class="gx-food-price">₹245</p>
+        <button class="gx-add-btn" onclick="addToCart('BBQ Ribs', 245, './img/IMG_7867.JPG')">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <center>
+      <a href="./menu.html"><button class="gx-primary-btn">See All Menu</button></a>
+    </center>
+  </section>
+
+  <footer class="f1 bg-dark text-center text-white py-3">
+    <div class="d2">
+      <a href="https://www.instagram.com/griilllx?igsh=aDBua3V5dHNpYzhs&utm_source=qr" class="text-white">
+        <i class="fa-brands fa-instagram"></i> GrillX
+      </a>  
+
+
+    </div>
+        © 2025 GrillX — All Rights Reserved
+
+  </footer>
+
+
+  <script src="./script.js"></script>
+
+</body>
+</html>

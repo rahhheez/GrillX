@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrillX order</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="./home.html">GrillX</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+                              <li class="nav-item">
+            <a class="nav-link" href="./cart.html">My Cart</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="t7">
+    <div class="t2">
+      <form id="form" onsubmit="sendEmail(event)">
+        <label for="name"><b>Name :</b></label><br>
+        <input type="text" id="name" placeholder="Enter Your Name" class="l1"><br>
+        <span class="error" id="nameerror"></span><br>
+        <label for="email"><b>Email :</b></label><br>
+        <input type="email" id="email" placeholder="Enter Your Email" class="l1"><br>
+        <span class="error" id="emailerror"></span><br>
+        <label for="number"><b>Phone Number :</b></label><br>
+        <input type="number" id="number" placeholder="Enter Your Phone Number" class="l1"><br>
+        <span class="error" id="numbererror"></span><br>
+        <label for="Adress"><b>Address :</b></label><br>
+        <input type="address" id="address" placeholder="Enter Your Address" class="l1"><br>
+        <span class="error" id="addresserror"></span><br>
+        <label for="Land Mark"><b>Land Mark :</b></label><br>
+        <input type="text" id="Mark" placeholder="Enter a Land Mark" class="l1"><br>
+        <span class="error" id="markerror"></span><br>
+
+        <button type="submit" class="b5">Confirm Order</button>
+
+      </form>
+    </div>
+
+
+<div class="menu-item">
+  <span class="item-name">Sample Item</span> - <span class="price">₹100</span>
+  <input type="number" class="quantity" value="1" min="1">
+  Total: <span class="total">₹100</span>
+  <button class="place-order">Place Order</button>
+</div>
+<div>Grand Total: <span id="grand-total">₹100</span></div>
+</body>
+
+
+</html>
